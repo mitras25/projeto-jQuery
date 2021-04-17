@@ -1,0 +1,316 @@
+.top {
+  background: url('../img/covid-19_0.jpg');
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+}
+h2 {
+  border-bottom: 1px solid #272727;
+  margin: 10px 0;
+}
+.main {
+  margin-top: 80px;
+}
+.main p {
+  line-height: 1.4;
+  letter-spacing: 1px;
+  margin: 8px 0;
+}
+.main h2 {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
+}
+
+.card1 {
+  background-color: #e0e0e0;
+  margin: 50px 0;
+}
+
+.card-header {
+  background-color: #272727;
+  color: white;
+  padding: 10px;
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+}
+.card-body {
+  text-align: center;
+  margin: 20px auto;
+}
+.card-body h3 {
+  font-size: 1.5em;
+  letter-spacing: 1.2px;
+}
+.card-body span {
+  font-size: 2em;
+  color: red;
+  font-weight: 400;
+}
+.card-body hr {
+  margin: 20px;
+}
+.card-body p {
+  font-style: italic;
+}
+
+/* SECTION CROSS */
+.cross {
+  width: 100%;
+  height: 480px;
+  background-color: #272727;
+  padding: 20px;
+}
+.cross .p1 {
+  color: #fff;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+.inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.input1 input,
+.input2 input {
+  width: 300px;
+  height: 70px;
+  margin-top: 10px;
+  font-size: 2em;
+}
+.inputs .btn {
+  width: 200px;
+  height: 70px;
+  margin-top: 90px;
+  font-size: 1.5em;
+
+  border: 2px solid #ccc;
+  color: #ccc;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #272727;
+  border: none;
+}
+
+/* TABELA */
+.tg {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.tg td {
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+.tg th {
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+.tg .tg-sa8i {
+  background-color: #fd6864;
+  border-color: inherit;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: top;
+}
+.tg .tg-w3ps {
+  background-color: #ffce93;
+  border-color: inherit;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: top;
+}
+.tg .tg-8pea {
+  background-color: #fffe65;
+  border-color: inherit;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: top;
+}
+.tg .tg-7btt {
+  border-color: inherit;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: top;
+}
+.tg .tg-i9i9 {
+  background-color: #fe996b;
+  border-color: inherit;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: top;
+}
+.tg .tg-ycyt {
+  background-color: #67fd9a;
+  border-color: inherit;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: top;
+}
+.tg .tg-0pky {
+  border-color: inherit;
+  text-align: left;
+  vertical-align: top;
+}
+.tg .tg-f79y {
+  background-color: #ffccc9;
+  border-color: inherit;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: top;
+}
+.tg .tg-kt43 {
+  background-color: #fffc9e;
+  border-color: inherit;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: top;
+}
+.tg .tg-84w4 {
+  background-color: #9aff99;
+  border-color: inherit;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: top;
+}
+
+.tg {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.tg td {
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+.tg th {
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+.tg .tg-z0iz {
+  background-color: #fffc9e;
+  text-align: left;
+  vertical-align: top;
+}
+.tg .tg-xpce {
+  background-color: #67fd9a;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: top;
+}
+.tg .tg-yofg {
+  background-color: #9aff99;
+  text-align: left;
+  vertical-align: top;
+}
+.tg .tg-gdrr {
+  background-color: #fd6864;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: top;
+}
+.tg .tg-ikmv {
+  background-color: #cbcefb;
+  text-align: left;
+  vertical-align: top;
+}
+.tg .tg-ltxa {
+  background-color: #ffccc9;
+  text-align: left;
+  vertical-align: top;
+}
+.tg .tg-cp0k {
+  background-color: #fcff2f;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: top;
+}
+.tg .tg-amwm {
+  font-weight: bold;
+  text-align: center;
+  vertical-align: top;
+}
+.tg .tg-0wvq {
+  background-color: #fe996b;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: top;
+}
+.tg .tg-6hok {
+  background-color: #96fffb;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: top;
+}
+
+/*SCROLL REVEAL */
+.has-scroll-reveal {
+  opacity: 0;
+  animation-play-state: paused;
+}
+
+.animated {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-play-state: running;
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2.5rem, 0);
+    transform: translate3d(0, 2.5rem, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}

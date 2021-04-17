@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal COVID-19 - Governo do Estado de São Paulo</title>
+  <script src="./jquery-3.6.0.min.js"></script>
+  <script src="./js/script.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/situacao.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+
+
+  </script>
+</head>
+
+<body>
+  <header class="header">
+    <a href="./index.html">
+      <img src="./img/logo_cidadeSP.png" alt="">
+    </a>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="quemsomos.html">Quem Somos</a></li>
+        <li><a href="informacoes.html">Informações</a></li>
+        <li><a href="situacao.html">Situação</a></li>
+      </ul>
+      <button>
+        <i class="fas fa-search-plus" id="btn-plus"></i>
+        <i class="fas fa-search-minus" id="btn-minus" style="display: none;"></i>
+      </button>
+    </nav>
+  </header>
+  <!-- IMG HEADER -->
+  <div class="img-covid">
+    <div>
+      <h1>Portal COVID-19</h1>
+      <p>Transparência do Governo de São Paulo no combate à pandemia do Coronavírus</p>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+
+  <div class="top">
+
+  </div>
+
+  <main class="main has-scroll-reveal animation fadeInUp">
+    <h2>Leitos de UTI na Cidade de São Paulo</h2>
+    <p>O Estado de São Paulo registra nesta segunda-feira (29) 31.041 internados, sendo 12.946 pacientes em leitos de Terapia Intensiva e 18.095 em enfermaria. As taxas de ocupação dos leitos de UTI são de 92,3% no Estado e de 92,6% na Grande São Paulo.</p>
+    <p>No decorrer da pandemia, já houve 72.283 óbitos por COVID-19 e 2.425.320 casos, dos quais 2.091.783 recuperados. Entre eles, estão 243.754 pessoas que estiveram internadas e receberam alta hospitalar.</p>
+    <p>A Fase Emergencial do Plano São Paulo foi prorrogada até o dia 11 de abril, com a manutenção das restrições mais rígidas visando garantir a assistência a vida e conter a sobrecarga em hospitais de todo o Estado, além de frear o aumento de novos casos, internações e mortes pelo coronavírus.</p>
+    <p>
+
+      São Paulo criou o Centro de Contingência do Estado para monitorar e coordenar ações contra a propagação do novo coronavírus
+    </p>
+
+    <!-- CARDS -->
+
+    <div class="cards has-scroll-reveal animation fadeInUp">
+      <div class="card1">
+        <div class="card-header">Casos em São Paulo</div>
+        <div class="card-body">
+          <h3>Confirmados</h3>
+          <span>2.446.680</span>
+          <hr>
+          <h3>Óbitos</h3>
+          <span>73.492</span>
+          <p>atualizado em 31/03</p>
+        </div>
+      </div>
+
+      <div class="card1">
+        <div class="card-header">índice de Isolamento</div>
+        <div class="card-body">
+          <h3>No Estado</h3>
+          <span>44%</span>
+          <hr>
+          <h3>Na Capital</h3>
+          <span>44%</span>
+          <p>atualizado em 31/03</p>
+        </div>
+      </div>
+
+      <div class="card1 card1-b">
+        <div class="card-header">Ocupação de Leitos</div>
+        <div class="card-body">
+          <h3>Aumento de leitos em UTI</h3>
+          <h4>Ocupados na semana anteior: 93,8%</h4>
+          <span>89% ocupados</span>
+          <hr>
+          <h3>Leitos a cada 100k/habitantes</h3>
+          <span>1.5</span>
+          <p>atualizado em 31/03</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- INÍCIO DE SESSÃO DO CÁLCULO DA FASE -->
+
+  <section class="cross has-scroll-reveal animation fadeInUp" id="cross">
+    <h4 class="p1">A Secretaria Municipal da Saúde (SMS) de São Paulo atualiza neste domingo (28), boletim informativo sobre a situação do novo coronavírus na capital paulista nos hospitais da rede municipal e de campanha, contratualizados e Atenção Básica.</h4>
+    <h4 class="p1">O Fundo da página ilustrará a fase em que a cidade se encontra de acordo com os dados inseridos. <br> Confira nas tabelas abaixos os serviços que estarão disponíveis em cada uma.</h4>
+    <div class="inputs">
+      <div class="input1">
+        <h4 class="p1">Ocupação de Leitos de UTI</h4>
+        <input type="text" id="leitos">
+      </div>
+      <div class="input2">
+        <h4 class="p1">Ocupação Enfermaria</h4>
+        <input type="text" id="enfermaria">
+      </div>
+      <button class="btn" onclick="calculaFase()">Verificar</button>
+    </div>
+  </section>
+
+  <!-- FIM DE SESSÃO DO CÁLCULO DA FASE-->
+
+  <!-- INÍCIO DAS TABELAS-->
+
+  <section class="main has-scroll-reveal animation fadeInUp">
+    <h2>Critérios de Cálculo de fase</h2>
+    <table class="tg" style="margin: 0 auto;">
+      <thead>
+        <tr>
+          <th class="tg-7btt">Critério</th>
+          <th class="tg-7btt">Indicador </th>
+          <th class="tg-sa8i">Fase 1 (Alerta máximo)</th>
+          <th class="tg-i9i9">Fase 2 (Controle)</th>
+          <th class="tg-8pea">Fase 3 (Flexibilização)</th>
+          <th class="tg-ycyt">Fase 4 (Abertura Parcial)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tg-7btt" rowspan="2">Capacidade do sistema de saúde</td>
+          <td class="tg-0pky">Taxa de Ocupação de leitos UTI COVID</td>
+          <td class="tg-f79y">Acima de 80%</td>
+          <td class="tg-w3ps">Entre 70% e 80%</td>
+          <td class="tg-kt43">Entre 70% e 60%</td>
+          <td class="tg-84w4">Abaixo de 60%</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">Leitos de UTI COVID/ 100k habitantes</td>
+          <td class="tg-f79y">Abaixo de 3,0</td>
+          <td class="tg-w3ps">Entre 3,0 e 5,0</td>
+          <td class="tg-kt43">Acima de 5,0</td>
+          <td class="tg-84w4">ACIMA DE 5,0</td>
+        </tr>
+        <tr>
+          <td class="tg-7btt" rowspan="3">Evolução da Pandemia<br></td>
+          <td class="tg-0pky">Novos casos nos últimos 7 dias / Casos nos 7 dias anteriores</td>
+          <td class="tg-f79y">Acima de 2,0</td>
+          <td class="tg-w3ps">Entre 1,0 e 2,0</td>
+          <td class="tg-kt43">Entre 1,0 e 2,0</td>
+          <td class="tg-84w4">Abaixo de 1,0</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">Novas internações nos últimos 7 dias</td>
+          <td class="tg-f79y">Acima de 1,5</td>
+          <td class="tg-w3ps">Entre 1,0 e 1,5</td>
+          <td class="tg-kt43">Entre 0,5 e 1,0</td>
+          <td class="tg-84w4">Abaixo de 0,5</td>
+        </tr>
+        <tr>
+          <td class="tg-0pky">Óbitos por COVID nos últimos 7 dias</td>
+          <td class="tg-f79y">Acima de 2,0</td>
+          <td class="tg-w3ps">Entre 1,0 e 2,0<br></td>
+          <td class="tg-kt43">Entre 0,5 e 1,0</td>
+          <td class="tg-84w4">Abaixo de 0,5</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="main has-scroll-reveal animation fadeInUp">
+
+    <h2>Abertura dos Setores Econômicos de acordo com as fases</h2>
+
+    <table class="tg" style="margin: 0 auto;">
+      <thead>
+        <tr>
+          <th class="tg-amwm">Setores Temáticos<br></th>
+          <th class="tg-gdrr">Fase1</th>
+          <th class="tg-0wvq">Fase 2</th>
+          <th class="tg-cp0k">Fase 3</th>
+          <th class="tg-xpce">Fase 4</th>
+          <th class="tg-6hok">Fase 5</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tg-amwm">Espaços públicos<br></td>
+          <td class="tg-ltxa">x</td>
+          <td class="tg-ltxa">x</td>
+          <td class="tg-ltxa">x</td>
+          <td class="tg-yofg">x</td>
+          <td class="tg-yofg">v</td>
+        </tr>
+        <tr>
+          <td class="tg-amwm">Atividades Imobiliárias<br></td>
+          <td class="tg-ltxa">x</td>
+          <td class="tg-z0iz">Aberto com restrições</td>
+          <td class="tg-z0iz">v</td>
+          <td class="tg-yofg">v</td>
+          <td class="tg-yofg">v</td>
+        </tr>
+        <tr>
+          <td class="tg-amwm">Concessionárias</td>
+          <td class="tg-ltxa">x</td>
+          <td class="tg-z0iz">Aberto com restrições</td>
+          <td class="tg-z0iz">v</td>
+          <td class="tg-yofg">v</td>
+          <td class="tg-yofg">v</td>
+        </tr>
+        <tr>
+          <td class="tg-amwm">Escritórios</td>
+          <td class="tg-ltxa">x</td>
+          <td class="tg-z0iz">Aberto com restrições</td>
+          <td class="tg-z0iz">v</td>
+          <td class="tg-yofg">v</td>
+          <td class="tg-yofg">v</td>
+        </tr>
+        <tr>
+          <td class="tg-amwm">Bares, restaurantes e similares</td>
+          <td class="tg-ltxa">x</td>
+          <td class="tg-ltxa">x</td>
+          <td class="tg-z0iz">Aberto com restrições</td>
+          <td class="tg-yofg">v</td>
+          <td class="tg-yofg">v</td>
+        </tr>
+        <tr>
+          <td class="tg-amwm">Comércio</td>
+          <td class="tg-ltxa">x</td>
+          <td class="tg-z0iz">Aberto com restrições</td>
+          <td class="tg-z0iz">Aberto com restrições</td>
+          <td class="tg-z0iz">Aberto com restrições</td>
+          <td class="tg-yofg">v</td>
+        </tr>
+        <tr>
+          <td class="tg-amwm">Shopping Center</td>
+          <td class="tg-ltxa">x</td>
+          <td class="tg-z0iz">Aberto com restrições</td>
+          <td class="tg-z0iz">Aberto com restrições</td>
+          <td class="tg-z0iz">Aberto com restrições</td>
+          <td class="tg-yofg">v</td>
+        </tr>
+        <tr>
+          <td class="tg-amwm">Salão de Beleza</td>
+          <td class="tg-ltxa">x</td>
+          <td class="tg-ltxa">x</td>
+          <td class="tg-z0iz">Aberto com restrições</td>
+          <td class="tg-z0iz">Aberto com restrições</td>
+          <td class="tg-yofg">v</td>
+        </tr>
+        <tr>
+          <td class="tg-amwm">Academia</td>
+          <td class="tg-ltxa">x</td>
+          <td class="tg-ltxa">x</td>
+          <td class="tg-ltxa">x</td>
+          <td class="tg-z0iz">Aberto com restrições</td>
+          <td class="tg-yofg">v<br></td>
+        </tr>
+        <tr>
+          <td class="tg-amwm">Teatro, Cinemas</td>
+          <td class="tg-ltxa">x</td>
+          <td class="tg-ltxa">x</td>
+          <td class="tg-ltxa">x</td>
+          <td class="tg-yofg">x</td>
+          <td class="tg-yofg">v</td>
+        </tr>
+        <tr>
+          <td class="tg-amwm">Eventos que geram aglomeração</td>
+          <td class="tg-ltxa">x</td>
+          <td class="tg-ltxa">x</td>
+          <td class="tg-ltxa">x</td>
+          <td class="tg-ltxa">x</td>
+          <td class="tg-yofg">v</td>
+        </tr>
+        <tr>
+          <td class="tg-amwm">Educação</td>
+          <td class="tg-ltxa">x</td>
+          <td class="tg-ltxa">x</td>
+          <td class="tg-ltxa">x</td>
+          <td class="tg-ltxa">x</td>
+          <td class="tg-yofg">v</td>
+        </tr>
+        <tr>
+          <td class="tg-amwm">Transporte<br></td>
+          <td class="tg-ikmv" colspan="5">A ser definido<br></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- FIM DAS TABELAS -->
+
+  <!-- INÍCIO DO FOOTER -->
+
+  <footer>
+    <div class="footer-1">
+      <img src="./img/brasao.png">
+      <strong>Governo do Estado de São Paulo</strong><br>
+      Todos os direitos reservados.
+      <div id="data-hora"></div>
+    </div>
+    <div class="footer-2">
+      <p>Nos acompanhem em nossas redes sociais:</p>
+      <div>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram-square"></i>
+        <i class="fab fa-twitter"></i>
+      </div>
+      <br>
+      <strong>Ouvidoria:</strong>
+      <p>Canal de comunicação entre o cidadão e a administração pública com a finalidade de receber manifestações como sugestões, reclamações e denúncias. </p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

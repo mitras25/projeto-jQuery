@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal COVID-19 - Governo do Estado de São Paulo</title>
+  <script src="./jquery-3.6.0.min.js"></script>
+  <script src="./js/script.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <!-- SLICK -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
+  <!-- FIM SLICK -->
+  <script>
+    //INÍCIO CÓDIGO ACCORDION
+
+    $(function () {
+      $("#accordion").accordion();
+    });
+    $(function () {
+      $("#dialog").dialog();
+    });
+    $(document).ready(function () {
+    })
+  </script>
+</head>
+
+<body>
+  <header class="header">
+    <a href="#">
+      <img src="./img/logo_cidadeSP.png" alt="">
+    </a>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="quemsomos.html">Quem Somos</a></li>
+        <li><a href="informacoes.html">Informações</a></li>
+        <li><a href="situacao.html">Situação</a></li>
+      </ul>
+      <button>
+        <i class="fas fa-search-plus" id="btn-plus"></i>
+        <i class="fas fa-search-minus" id="btn-minus" style="display: none;"></i>
+      </button>
+    </nav>
+  </header>
+  <!-- IMG HEADER -->
+  <div class="img-covid">
+    <div>
+
+      <h1>Portal COVID-19</h1>
+      <h4>Transparência do Governo de São Paulo no combate à pandemia do Coronavírus</h4>
+    </div>
+  </div>
+
+
+  <main class="main has-scroll-reveal animation fadeInUp">
+    <div class="informacoes">
+      <div class="info-1">
+        <div class="info-img"></div>
+        <h2>Vacinas aprovadas pela OMS</h2>
+        <p>A Organização Mundial da Saúde (OMS) incluiu a vacina contra Covid-19 da AstraZeneca e da Universidade de Oxford em sua lista de imunizantes aprovados para uso emergencial, ampliando o acesso à vacina aos países em desenvolvimento por meio do programa Covax.</p>
+        <a href="./informacoes.html"><button class="btn">Saiba mais!</button></a>
+      </div>
+      <div class="info-2">
+        <div class="info-img2"></div>
+        <h2>Potenciais Novos tratamentos contra a COVID19</h2>
+        <p>Desde o início da pandemia de coronavírus, já foram registrados no planeta nada menos do que 2,7 mil ensaios clínicos de tratamentos experimentais contra a covid-19. São testes envolvendo humanos. </p>
+        <a href="./informacoes.html"><button class="btn">Saiba mais!</button></a>
+      </div>
+    </div>
+  </main>
+
+  <section class="carousel">
+    <section class="demo has-scroll-reveal animation fadeInUp container">
+      <div class="row slider">
+        <div class="col-md-12">
+          <div class="details">
+            <img src="./img/slider/1.webp" alt="">
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <div class="details">
+            <img src="./img/slider/2.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <div class="details">
+            <img src="./img/slider/3.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <div class="details">
+            <img src="./img/slider/4.jpeg" alt="">
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <div class="details">
+            <img src="./img/slider/5.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <div class="details">
+            <img src="./img/slider/6.webp" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <section class="main has-scroll-reveal animation fadeInUp" id="main">
+    <div class="faq" id="faq">
+      <div class="faq-info" id="faq-info">
+        <h2>Protocolos no Combate Contra o COVID-19</h2>
+        <ul>
+          <li>
+            <p>Lave com frequência as mãos até a altura dos punhos, com água e sabão, ou então higienize com álcool em gel 70%. Essa frequência deve ser ampliada quando estiver em algum ambiente público (ambientes de trabalho, prédios e instalações comerciais, etc), quando utilizar estrutura de transporte público ou tocar superfícies e objetos de uso compartilhado.</p>
+          </li>
+          <li>
+            <p>Ao tossir ou espirrar, cubra nariz e boca com lenço ou com a parte interna do cotovelo.
+              Não tocar olhos, nariz, boca ou a máscara de proteção fácil com as mãos não higienizadas.
+              Se tocar olhos, nariz, boca ou a máscara, higienize sempre as mãos como já indicado.</p>
+          </li>
+          <li>
+            <p>Mantenha distância mínima de 1 (um) metro entre pessoas em lugares públicos e de convívio social. Evite abraços, beijos e apertos de mãos. Adote um comportamento amigável sem contato físico, mas sempre com um sorriso no rosto.</p>
+          </li>
+          <li>
+            <p>Não compartilhe objetos de uso pessoal como talheres, toalhas, pratos e copos.</p>
+          </li>
+          <li>
+            <p>Se estiver doente, evite contato próximo com outras pessoas, principalmente idosos e doentes crônicos, busque orientação pelos canais on-line disponibilizados pelo SUS ou atendimento nos serviços de saúde e siga as recomendações do profissional de saúde.
+              Durma bem e tenha uma alimentação saudável.</p>
+          </li>
+        </ul>
+      </div>
+      <div class="faq-roller" id="faq-roller">
+        <h2>
+          Perguntas Frequentes
+        </h2>
+        <!-- ACCORDION PARA FAZER A SESSÃO FAQ -->
+        <div id="accordion">
+          <h3 style="background-color: #ccc; color: #404040; border: 1px solid #404040">As vacinas contra a COVID-19 são seguras?</h3>
+          <div>
+            <p>
+              A segurança das vacinas é sempre a prioridade máxima e isso não é diferente no caso das vacinas contra a COVID-19. Todas elas passam por várias fases de ensaios clínicos antes de serem aprovadas para uso na população. Esses ensaios visam garantir a segurança da vacina e sua capacidade de proteger da doença (eficácia).
+            </p>
+            <p>
+              As vacinas contra a COVID-19 que estão sendo desenvolvidas estão seguindo essas mesmas fases. Nenhum imunizante será aprovado ou disponibilizado nos países para uso na população em geral até que sua segurança tenha sido comprovada pelas agências reguladoras. Da mesma forma, a OMS não incluirá nenhuma vacina em sua lista para uso emergencial até que tenha analisado todos os dados dos ensaios clínicos. Depois que uma vacina contra a COVID-19 for aprovada, o monitoramento de segurança continuará e é parte normal dos programas de imunização.
+            </p>
+          </div>
+          <h3 style="background-color: #ccc; color: #404040; border: 1px solid #404040">As vacinas contra a COVID-19 são eficazes?</h3>
+          <div>
+            <p>
+              As vacinas contra a COVID-19 que já foram autorizadas para uso em alguns países forneceram informações – provenientes de seus ensaios clínicos – sobre a sua eficácia em prevenir a doença. As agências reguladoras nacionais analisaram esses dados antes de autorizá-las. A eficácia das vacinas continua sendo monitorada de perto, mesmo depois de terem sido aprovadas em um país. Somente os imunizantes que se mostraram eficazes em serão aprovados para uso na população.
+            </p>
+          </div>
+          <h3 style="background-color: #ccc; color: #404040; border: 1px solid #404040">Quais vacinas foram aprovadas e onde?</h3>
+          <div>
+            <p>
+              Em março de 2021, já havia vacinas contra a COVID-19 aprovadas para uso pelas autoridades reguladoras nacionais de alguns países. A OMS também concedeu autorização à vacina da Pfizer/BioNTech, às duas versões das vacinas AstraZeneca/Oxford - SKBio e o Serum Institute of India - e à vacina da Janssen. Outras continuam a ser testadas e estudadas..
+            </p>
+          </div>
+          <h3 style="background-color: #ccc; color: #404040; border: 1px solid #404040">Como as pessoas poderão acessar as vacinas contra a COVID-19?</h3>
+          <div>
+            <p>
+              Quando as vacinas contra a COVID-19 estiverem disponíveis em todos os lugares, as pessoas poderão acessá-las por meio dos Programas Nacionais de Imunização de seus países.
+            </p>
+
+          </div>
+          <h3 style="background-color: #ccc; color: #404040; border: 1px solid #404040">Quando vacinas contra a COVID-19 estarão disponíveis em meu país?</h3>
+          <div>
+            <p>
+              Embora alguns países de nossa região tenham concedido autorização de emergência para certos imunizantes, as vacinas contra a COVID-19 ainda não estão disponíveis na maioria dos países. A OPAS incentiva o povo das Américas a seguir as informações de suas autoridades sanitárias nacionais para determinar quando as vacinas contra a COVID-19 estarão disponíveis em cada país.
+            </p>
+
+          </div>
+          <h3 style="background-color: #ccc; color: #404040; border: 1px solid #404040">É melhor pegar a COVID-19 naturalmente do que tomar uma vacina?</h3>
+          <div>
+            <p>
+              Não. As vacinas conferem imunidade sem os efeitos nocivos que a COVID-19 pode ter no organismo (inclusive efeitos a longo prazo e risco de morte). Permitir que a doença se espalhe até que a imunidade coletiva (ou de rebanho) seja alcançada causaria milhões de mortes e forçaria ainda mais pessoas a viverem com os efeitos do vírus a longo prazo.
+            </p>
+          </div>
+          <h3 style="background-color: #ccc; color: #404040; border: 1px solid #404040">Qual é a recomendação para quem suspeite que pode estar com o coronavírus?</h3>
+          <div>
+            <p>
+              O Ministério da Saúde recomenda ficar em repouso e tomar bastante água. Se precisar sair, deve-se usar máscaras cirúrgicas (se possível) ou caseiras, conforme a orientação do MS. Evitar circular em lugares fechados, com muitas pessoas e com pouca ventilação. Além disso, é preciso entender que ir ao trabalho ou à escola com sintomas de gripe implica expor potencialmente outras pessoas à doença. </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-1">
+      <img src="./img/brasao.png">
+      <strong>Governo do Estado de São Paulo</strong><br>
+      Todos os direitos reservados.
+      <div id="data-hora"></div>
+    </div>
+    <div class="footer-2">
+      <p>Nos acompanhem em nossas redes sociais:</p>
+      <div>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram-square"></i>
+        <i class="fab fa-twitter"></i>
+      </div>
+      <br>
+      <strong>Ouvidoria:</strong>
+      <p>Canal de comunicação entre o cidadão e a administração pública com a finalidade de receber manifestações como sugestões, reclamações e denúncias. </p>
+    </div>
+  </footer>
+
+  <!-- INÍCIO DO DIALOG - JQUERY UI -->
+  <div id="dialog" title="FASE EMERGENCIAL" style="display: flex; align-items: center;">
+    <img src="./img/slider/virus.webp" style="width: 100px; height: 100px;">
+    <p style="text-align: center;">A prefeitura da Cidade de São informa a todos seus cidadãos que a fase emerencial se estenderá do dia 05/04 para o dia 11/04.</p>
+  </div>
+  <!-- FIM DO DIALOG - JQUERY UI -->
+
+  <!-- SLICK -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+    $('.slider').slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            arrows: true
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+  </script>
+
+</body>
+
+</html>

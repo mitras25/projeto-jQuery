@@ -1,0 +1,250 @@
+#covidrosa {
+  width: 100%;
+}
+
+#inform {
+  background: url('../img/20.jpg');
+  width: 100%;
+  height: 500px;
+}
+p {
+  text-align: justify;
+  text-align: justify;
+  margin-left: 10px;
+  margin-right: 10px;
+  line-height: 1.5;
+}
+
+.distancia {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
+
+#agulha {
+  float: left;
+  width: 27%;
+  margin: 20px;
+}
+
+#explicacoes {
+  margin-top: 21px;
+  width: 100%;
+}
+
+#esquerda {
+  float: left;
+  width: 100%;
+}
+
+#complemento {
+  position: absolute;
+  color: whitesmoke;
+  padding: 25px;
+}
+
+.classep {
+  margin-bottom: 10px;
+}
+
+#texto-imagem {
+  width: 70%;
+  float: left;
+}
+#prevencao {
+  width: 100%;
+  background-color: #66a2d80a;
+  margin: 20px auto;
+  float: left;
+  height: 476px;
+}
+#quebra {
+  background-color: #ccc;
+  height: 5px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.box1-main {
+  display: flex;
+}
+#dentrodaprevencao {
+  padding: 30px;
+  float: left;
+}
+
+#torneira {
+  border-radius: 7px 7px;
+  width: 30%;
+  margin-left: 20px;
+}
+
+.distanciamento {
+  width: 100%;
+  margin-top: 150px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.TabControl {
+  width: 68%;
+  overflow: hidden;
+  float: left;
+  height: 400px;
+}
+
+.TabControl #header {
+  width: 100%;
+  overflow: hidden;
+  cursor: hand;
+}
+
+.TabControl #content {
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+}
+
+.TabControl .abas {
+  display: inline;
+  cursor: pointer;
+}
+
+.TabControl .abas li {
+  float: left;
+  list-style: none;
+}
+
+.aba {
+  width: 165px;
+  height: 30px;
+  border-radius: 5px 5px 0 0;
+  text-align: center;
+  padding-top: 5px;
+  background: #2196f385;
+  transition: 0.6s;
+}
+
+.ativa {
+  width: 165px;
+  height: 30px;
+  border-radius: 5px 5px 0 0;
+  text-align: center;
+  padding-top: 5px;
+  background: #0000ff2e;
+}
+
+.selected span {
+  color: #fff;
+}
+.TabControl {
+  height: auto;
+}
+.TabControl #content {
+  background: #27408b;
+}
+
+.TabControl .conteudo {
+  width: 100%;
+  height: auto;
+  background: #d4dde1;
+  display: none;
+  padding: 32px;
+  height: 100%;
+  color: #424040;
+}
+
+.selected {
+  width: 160px;
+  height: 30px;
+  border-radius: 5px 5px 0 0;
+  text-align: center;
+  padding-top: 5px;
+  background: #2196f385;
+  border: 1px;
+}
+
+.selected:hover {
+  width: 160px;
+  height: 30px;
+  border-radius: 5px 5px 0 0;
+  text-align: center;
+  padding-top: 5px;
+  background: #0000ff2e;
+  border: 1px;
+}
+
+#juntos {
+  width: 69%;
+  float: left;
+  height: 441px;
+}
+
+#rua {
+  width: 30%;
+  float: left;
+}
+
+#segundo {
+  width: 100%;
+}
+
+#terceiro {
+  width: 100%;
+  float: right;
+  background: #59839636;
+  margin-top: 30px;
+  padding: 20px;
+}
+.main2 {
+  margin-top: -40px;
+}
+
+.has-scroll-reveal {
+  opacity: 0;
+  animation-play-state: paused;
+}
+
+.animated {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-play-state: running;
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2.5rem, 0);
+    transform: translate3d(0, 2.5rem, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.videos {
+  display: flex;
+  align-items: center;
+  margin: 0 auto 70px;
+}
+
+.video1 {
+  margin-right: 35px;
+}
+.video2 {
+  margin-left: 35px;
+}
+h2 {
+  border-bottom: 1px solid #272727;
+  margin: 10px 0 30px;
+  text-align: center;
+}

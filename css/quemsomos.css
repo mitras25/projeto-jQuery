@@ -1,0 +1,246 @@
+.top {
+  background: url('../img/spspsp.jpeg');
+  width: 100%;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+}
+.introducao {
+  background-color: #676c7112;
+  width: 100%;
+  height: 169px;
+  padding: 38px;
+}
+
+#quem {
+  border: solid;
+  border-color: #00000012;
+  padding: 22px;
+}
+.roxo {
+  width: 96%;
+}
+
+.comp {
+  width: 30%;
+  margin-top: 53px;
+  float: right;
+}
+.main {
+  margin-top: -10px;
+}
+
+.Grid {
+  display: grid;
+  grid-template-columns: 165px 0fr 0f;
+  grid-gap: -3px;
+  clear: left;
+  margin-left: 157px;
+}
+
+.Grid div {
+  width: 88%;
+  margin: 0px;
+  text-align: center;
+  height: 25px;
+  margin-top: 28px;
+}
+
+#meio {
+  background-color: #676c7112;
+  width: 100%;
+  height: 331px;
+  margin-bottom: 65px;
+  padding: 38px;
+}
+
+.box1 {
+  background-color: #626767;
+  color: white;
+  transition: 0.4s;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+.aqui {
+  text-decoration: none;
+  color: white;
+  transition: 0.4s;
+}
+
+.aqui:hover {
+  color: #626767;
+  color: #272727;
+}
+.box1:hover {
+  background-color: #dbcce5;
+  color: #272727;
+}
+
+.nossa {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 11px;
+  margin-top: 10px;
+  color: #544f4c;
+}
+
+.textos {
+  height: auto;
+  background: #eaeaea99;
+  width: 100%;
+  padding: 30px;
+  margin: 0 auto;
+}
+h2 {
+  border-bottom: 1px solid #272727;
+  margin: 10px 0 30px;
+  text-align: center;
+}
+.textos p {
+  line-height: 1.6;
+}
+
+.textos .nossa {
+  margin-bottom: 20px;
+}
+
+.quemSomos {
+  margin: 25px 0 25px 25px;
+}
+
+.quemSomosDescricao {
+  margin: 30px;
+  font-style: italic;
+  font-size: 16px;
+  text-align: center;
+}
+
+.equipe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin: 30px;
+}
+
+.pessoa {
+  width: 25%;
+  padding: 10px 10px;
+  margin-bottom: 30px;
+  padding: 22px;
+  background-color: #00000012;
+  transition: 0.4s;
+}
+
+.pessoa:hover {
+  transform: scale(1.035);
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.2);
+}
+
+.dev {
+  width: 25%;
+  padding: 5px 5px;
+}
+
+.pessoaImagem {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 100%;
+  height: 150px;
+  margin: 0 auto;
+  width: 150px;
+}
+
+.imagemAlexandre {
+  background-image: url('./img/equipe/Alexandre.png');
+}
+
+.imagemAline {
+  background-image: url('./img/equipe/Aline.jpg');
+}
+
+.imagemGabriela {
+  background-image: url('./img/equipe/Gabriela.jpeg');
+}
+
+.pessoaNome {
+  color: #413c3c;
+  font-size: 23px;
+  margin: 1rem 0;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.pessoaFuncao {
+  font-size: 18px;
+  color: #413c3c;
+  background-color: #6f6e68a8;
+  text-align: center;
+}
+
+.pessoaDescricao {
+  color: #595959;
+  padding: 15px 15px;
+  line-height: 160%;
+}
+
+.quebra {
+  height: 2px;
+  background: #9e9999;
+  border: none;
+}
+
+.diego {
+  width: 100%;
+  padding: 10px;
+  border-radius: 105px 105px;
+}
+
+.gabi {
+  width: 100%;
+  padding: 10px;
+  border-radius: 105px 105px;
+}
+
+.roberto {
+  width: 100%;
+  padding: 9px;
+}
+
+.has-scroll-reveal {
+  opacity: 0;
+  animation-play-state: paused;
+}
+
+.animated {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-play-state: running;
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2.5rem, 0);
+    transform: translate3d(0, 2.5rem, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}

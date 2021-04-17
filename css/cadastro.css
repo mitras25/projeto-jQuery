@@ -1,0 +1,283 @@
+/*
+----------------------------------------------- 
+-----------------------------------------------
+---------- Estilização página cadastro --------
+-----------------------------------------------
+-----------------------------------------------
+*/
+
+/* 
+-----------Estilização do formulário-----
+*/
+.main {
+  margin: 0 auto;
+}
+fieldset {
+  border: 2px solid #b6b6b6;
+}
+progress {
+  display: inline-block;
+  margin: 4px 0;
+  padding: 25px;
+  width: 100%;
+}
+
+.botaoProgre {
+  display: inline-block;
+}
+
+#voltarBotao {
+  text-align: center;
+  width: 40%;
+  cursor: pointer;
+  margin: 10px 30%;
+}
+
+/* fim da barra de progresso */
+body {
+  background-image: url(../img/fundo-cadastro.jpg);
+  font-weight: 600;
+}
+fieldset {
+  padding: 10px;
+}
+
+.classeVermelho {
+  border: 3px solid red;
+}
+
+#cadastroDados,
+#pessoal {
+  width: 50%;
+  background-color: rgba(228, 225, 225, 0.616);
+  padding: 15px;
+}
+
+.container {
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 
+-----------Estilização do campos formulário-----
+*/
+
+input,
+select {
+  padding: 8px;
+  margin: 10px;
+  font-size: 14px;
+  border: 1px solid rgba(51, 50, 50, 0.726);
+}
+
+/* 
+-----------Fim Estilização do campos formulário-----
+*/
+
+/* 
+-----------Estilização do campo de nome-----
+*/
+
+#primeiraCamada input {
+  width: 60%;
+}
+
+#primeiraCamada label {
+  width: 60%;
+  margin: 10px;
+}
+
+/* 
+-----------Fim da estilização do campo de nome-----
+*/
+
+/* 
+-----------Estilização do campo de sexo-----
+*/
+
+#primeiraCamadaB label {
+  width: 60%;
+  margin: 10px;
+}
+
+#primeiraCamadaB select {
+  margin-left: 1.3em;
+  width: 30%;
+}
+
+/* 
+-----------Fim da estilização do campo de sexo-----
+*/
+
+/* 
+----------- Estilização do campo de CPF-----
+*/
+
+#sextaCamanda label {
+  margin-right: 1.6em;
+}
+
+#segundaCamada input {
+  margin-left: 6%;
+  width: 30%;
+}
+
+#segundaCamada label {
+  width: 30%;
+  margin: 10px;
+}
+
+/* 
+----------- Fim da estilização do campo de CPF-----
+*/
+
+/* 
+-----------Estilização do campo de dia, mes, ano-----
+*/
+
+#terceiraCamada input {
+  margin: 10px;
+  width: 18%;
+}
+
+#terceiraCamada label {
+  width: 90%;
+  margin: 10px;
+}
+
+#terceiraCamada select {
+  width: 33%;
+}
+
+/* 
+-----------Fim da estilização do campo de dia, mes, ano-----
+*/
+
+/* 
+-----------Estilização do campo de email-----
+*/
+
+#quartaCamada input {
+  width: 50%;
+}
+
+#quartaCamada label {
+  width: 90%;
+  margin: 10px;
+}
+#quintaCamada label {
+  margin-right: -0.4em;
+}
+
+/* 
+-----------Fim da Estilização do campo de email-----
+*/
+
+/* 
+----------- Estilização do checkbox -----
+*/
+
+#setimaCamada,
+#nonaCamada {
+  width: 90%;
+  margin: 5px;
+}
+
+/* 
+-----------Estilização do botão de cadastramento-----
+*/
+
+#divDoBotao button {
+  text-align: center;
+  width: 40%;
+  cursor: pointer;
+  margin: 10px 30%;
+}
+
+/* 
+-----------Fim Estilização do botão de cadastramento-----
+*/
+#aviso {
+  margin: 168px auto;
+  width: 1150px;
+  height: auto;
+
+  background: #ccc;
+  padding: 30px;
+
+  font-size: 2em;
+  font-weight: 400;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* 
+----------------------------------------------- 
+-----------------------------------------------
+---------- Estilização página cadastro --------
+-----------------------------------------------
+-----------------------------------------------
+*/
+
+.oitava {
+  display: flex;
+  flex-direction: column;
+  padding: 7px;
+}
+
+#oitavaCamada label {
+  margin-right: 1.3em;
+}
+
+#oitavaCamadaB label {
+  margin-right: 0.5em;
+}
+
+#oitavaCamadaC label {
+  margin-right: 1.5em;
+}
+
+#quartaCamada label {
+  margin-right: 1.7em;
+}
+
+#enviarBotao {
+  height: 40px;
+  font-size: 1em;
+  background: #272727;
+  border: none;
+
+  color: #fff;
+  font-size: 1.1em;
+  transition: 0.4s;
+}
+
+#enviarBotao:hover {
+  background: #fff;
+  border: 1px solid #272727;
+  color: #272727;
+}
+.voltar {
+  height: 40px;
+  font-size: 1em;
+  background: #272727;
+  border: none;
+
+  color: #fff;
+  font-size: 1.1em;
+  transition: 0.4s;
+}
+
+.voltar:hover {
+  background: #fff;
+  border: 1px solid #272727;
+  color: #272727;
+}

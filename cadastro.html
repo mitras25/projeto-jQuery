@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro - covid19</title>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+  <script src="./js/script.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/cadastro.css">
+</head>
+
+<body>
+  <header class="header">
+    <a href="index.html">
+      <img src="./img/logo_cidadeSP.png" alt="">
+    </a>
+    <nav class="nav">
+      <ul>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="quemsomos.html">Quem Somos</a></li>
+        <li><a href="informacoes.html">Informações</a></li>
+        <li><a href="situacao.html">Situação</a></li>
+      </ul>
+      <button>
+        <i class="fas fa-search-plus" id="btn-plus"></i>
+        <i class="fas fa-search-minus" id="btn-minus" style="display: none;"></i>
+      </button>
+    </nav>
+  </header>
+
+  <main class="main" style="margin: 20px auto;">
+    <div class="container">
+      <!-- formulário de inscrição começa aqui! -->
+      <!-- Dados pessoais-->
+      <div id="pessoal">
+        <form class="myform" action="" class="form">
+          <div id="primeiraCamada">
+            <label for="nome">Nome:</label>
+            <input class="progress" type="text" name="nome" id="nome" placeholder="Nome Completo" />
+          </div>
+          <div id="primeiraCamadaB">
+            <label for="sexo">Sexo:</label>
+            <select class="progress" id="sexo" name="sexo" placeholder="Sexo">
+              <option class="sexoCheck" value="naoInformado">Não Informado</option>
+              <option class="sexoCheck" value="masculino">Masculino</option>
+              <option class="sexoCheck" value="feminino">Feminino</option>
+            </select>
+          </div>
+          <div id="primeiraCamadaC">
+            <label for="gestante">Gestante:</label>
+            <select class="progress" id="gestante" name="gestante" placeholder="gestante">
+              <option value="naoInformado">Não Informado</option>
+              <option value="sim">Sim</option>
+              <option value="nao">Não</option>
+            </select>
+          </div>
+
+          <div id="terceiraCamada">
+            <label for="diaNascimento">Nasceu no Dia / Mês / Ano:</label>
+            <br />
+            <input min="0" max="30" name="diaNascimento" type="number" id="diaNascimento" placeholder="Dia de Nascimento" />
+            <span> / </span>
+            <select id="mes" name="mes" placeholder="Mês">
+              <option value="0">Janeiro</option>
+              <option value="1">Fevereiro</option>
+              <option value="2">Março</option>
+              <option value="3">Abril</option>
+              <option value="4">Maio</option>
+              <option value="5">Junho</option>
+              <option value="6">Julho</option>
+              <option value="7">Agosto</option>
+              <option value="8">Setembro</option>
+              <option value="9">Outubro</option>
+              <option value="10">Novembro</option>
+              <option value="11">Dezembro</option>
+            </select>
+            <span> / </span>
+            <input class="progress" min="1891" max="2021" type="number" name="ano" id="ano" placeholder="Ano" />
+          </div>
+
+          <div id="sextaCamanda">
+            <label for="etnia">Etnia:</label>
+            <select class="progress" id="etnia" name="etnia" placeholder="etnia">
+              <option value="">Escolha sua etnia</option>
+              <option value="branco">Branco</option>
+              <option value="negro">Negro</option>
+              <option value="indígena">Indígena</option>
+              <option value="amarela">Amarela</option>
+              <option value="naoInformado">Não Informado</option>
+            </select>
+          </div>
+
+          <div id="quintaCamada">
+            <label for="profissao">Profissao:</label>
+            <select class="progress" id="profissao" name="profissao" placeholder="profissao">
+              <option value="">Escolha sua profissão</option>
+              <option value="profSaude">Profissional da Saúde</option>
+              <option value="profSocial">Profissional Social</option>
+              <option value="profSepultadores">Profissional Sepultador</option>
+              <option value="profPolicia">Policial</option>
+              <option value="profMotorista">Motorista de Ambulância</option>
+              <option value="outros">Outros</option>
+            </select>
+          </div>
+
+          <div class="oitava">
+
+            <div id="oitavaCamada">
+              <label for="peso">Peso:</label>
+              <input class="progress" type="peso" id="peso" nome="peso" placeholder="Peso em kg" />
+            </div>
+            <div id="oitavaCamadaB">
+              <label for="altura">Altura:</label>
+              <input class="progress" type="altura" id="altura" nome="altura" placeholder="Altura em cm" />
+            </div>
+            <div id="oitavaCamadaC">
+              <label for="imc">IMC:</label>
+              <input type="imc" id="imc" nome="imc" disabled />
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div id="cadastroDados">
+        <form class="myform" action="" class="form">
+          <div id="segundaCamada">
+            <label for="cpf">CPF:</label>
+            <input class="progress" type="text" id="cpf" nome="cpf" placeholder="xxx.xxx.xxx-xx" />
+          </div>
+
+          <div id="quintaCamada">
+            <label for="profissao">Cartão SUS:</label>
+            <input type="text" placeholder="Número do cartão SUS">
+          </div>
+
+          <div id="quartaCamada">
+            <label for="email">Email:</label>
+            <input class="progress" type="email" name="email" id="email" placeholder="E-mail" />
+          </div>
+
+          <div id="setimaCamada">
+            <fieldset>
+
+              <label for="vacinas">Vacinas:</label><br>
+              <input type="checkbox" value="hepatiteB">Hepatite B</input>
+              <input type="checkbox" value="duplaAdulto">Dupla Adulto</input>
+              <input type="checkbox" value="febreAmarela">Febre Amarela</input>
+              <input type="checkbox" value="influenza">Influenza</input>
+              <input type="checkbox" value="trípliceViral">Tríplice Viral</input>
+              <input type="checkbox" value="outros">Outros</input><br>
+              <input class="progress" type="checkbox" valeu='final' required>Confirmo as informações</input>
+            </fieldset>
+
+          </div>
+          <div id="nonaCamada">
+            <fieldset>
+
+              <label for="doencas">Comorbidades:</label><br>
+              <input type="checkbox" class="doenca" value="diabetes2">Diabetes tipo 2</input>
+              <input type="checkbox" class="doenca" value="hipertensão">Hipertensão arterial sistêmica</input>
+              <input type="checkbox" class="doenca" value="cardiopatias">Cardiopatias</input>
+              <input type="checkbox" class="doenca" value="cancer">Câncer</input>
+              <input type="checkbox" class="doenca" value="doencahepática">Doença hepática</input><br>
+              <input type="checkbox" class="doenca" value="Outros">Outros</input><br>
+              <input class="progress" type="checkbox" valeu='final' required>Confirmo as informações</input>
+
+              <!--<button class="progress botaoProgre" type="button" required>continuar</button>-->
+            </fieldset>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="aviso">
+      <div class="aviso"></div>
+      <button id="voltarBotao" class="voltar" type="button">Voltar</button>
+    </div>
+
+    <div id="barra">
+      <progress id='progress' max='100' value='0'></progress>
+      <div id="divDoBotao">
+        <button id="enviarBotao" type="button">Enviar</button>
+      </div>
+    </div>
+
+    <script src="./js/cadastro.js"></script>
+
+  </main>
+  <footer>
+    <div class="footer-1">
+      <img src="./img/brasao.png">
+      <strong>Governo do Estado de São Paulo</strong><br>
+      Todos os direitos reservados.
+      <div id="data-hora"></div>
+    </div>
+    <div class="footer-2">
+      <p>Nos acompanhem em nossas redes sociais:</p>
+      <div>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram-square"></i>
+        <i class="fab fa-twitter"></i>
+      </div>
+      <br>
+      <strong>Ouvidoria:</strong>
+      <p>Canal de comunicação entre o cidadão e a administração pública com a finalidade de receber manifestações como sugestões, reclamações e denúncias. </p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações COVID-19</title>
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script src="./js/script.js"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/informacoes.css">
+
+    <script type="text/javascript" src="js/informacoes.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#btn-plus").click(function () {
+                $('#juntos').css('height', 'auto');
+                $('#esquerda').css('height', 'auto');
+                $('#agulha').css('height', 'auto');
+                $('#segundo').css('height', 'auto');
+                $("#btn-plus").hide()
+                $("#btn-minus").show()
+            })
+            $("#btn-minus").click(function () {
+                $("p").css('fontSize', '1em')
+                $("#btn-minus").hide()
+                $("#btn-plus").show()
+            })
+        })
+    </script>
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="./index.html">
+            <img src="./img/logo_cidadeSP.png" alt="">
+        </a>
+        <nav class="nav">
+            <ul>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="quemsomos.html">Quem Somos</a></li>
+                <li><a href="informacoes.html">Informações</a></li>
+                <li><a href="situacao.html">Situação</a></li>
+            </ul>
+            <button>
+                <i class="fas fa-search-plus" id="btn-plus"></i>
+                <i class="fas fa-search-minus" id="btn-minus" style="display: none;"></i>
+            </button>
+        </nav>
+    </header>
+
+
+    <div id="inform">
+    </div>
+    <main class="main has-scroll-reveal animation fadeInUp">
+        <hr id="quebra">
+
+        <div class="direita">
+            <h2 class="distancia">Vacinas aprovadas</h2>
+            <p class="classep"> Vários tipos diferentes de vacinas potenciais para COVID-19
+                estão em desenvolvimento, incluindo:
+
+                Vacinas de vírus inativados ou enfraquecidos , que usam uma
+                forma do vírus que foi inativada ou enfraquecida para não causar doenças, mas ainda assim gerar uma resposta
+                imune.
+                <br>
+
+                Com o início da vacinação contra o novo coronavírus (SARS-CoV-2) no Brasil,
+                muito provavelmente você já deve ter procurado por informações sobre os dois
+                imunizantes com uso autorizado pela ANVISA (Agência Nacional de Vigilância
+                Sanitária): a <b>CoronaVac</b> e a <b>AstraZeneca/Oxford</b>.
+            </p>
+            <img src="img/1.jpg" id="agulha">
+        </div>
+        <div id="esquerda">
+            <h3 class="distancia">Coronavac</h3>
+            <p class="classep" id="texto-imagem"> A vacina CoronaVac, desenvolvida pela empresa biofarmacêutica chinesa Sinovac
+                Biotech
+                e produzida no Brasil pelo Instituto Butantan, em São Paulo, tem como expectativa a produção de
+                cerca de 1 milhão de doses por dia. Essa vacina foi testada em mais de 12 mil voluntários entre 18 e
+                59 anos, não apresentou efeitos colaterais graves em nenhum deles e apenas 35% dos voluntários
+                apresentaram algum tipo de reação adversa, porém todas elas classificadas como em grau leve, como
+                dor local e febre baixa.
+            </p>
+        </div>
+
+        <div id="segundo">
+            <div id="juntos3">
+                <h3 class="distancia">Oxford-Astrazeneca</h3>
+
+                <p class="classep">
+                    A vacina britânica Oxford-Astrazeneca utiliza uma tecnologia biomolecular baseada no chamado “vetor
+                    viral”, que consiste na utilização de um vírus modificado para estimular o sistema imunológico na
+                    produção de anticorpos contra o novo coronavírus. Na fabricação da vacina, uma espécie de vírus
+                    enfraquecido (adenovírus ChAdOx1), conhecido por causar gripe comum em chimpanzés, após ser
+                    modificado
+                    para não se multiplicar, carrega parte do material genético do SARS-CoV-2 responsável pela produção
+                    de
+                    uma proteína (“Spike”) que auxilia o vírus da COVID-19 a invadir as células humanas. Assim, após a
+                    vacinação, o adenovírus começa a produzir essa proteína Spike, ensinando o sistema imunológico
+                    humano
+                    que toda partícula com essa proteína deve ser destruída. Assim, após a imunização adequada (2 doses
+                    do
+                    mesmo fabricante e com intervalo de 12 semanas entre as aplicações) o sistema imune do nosso
+                    organismo
+                    torna-se capaz de reconhecer e atacar rapidamente o coronavírus, caso seja infectado.
+
+                    A vacinação está indicada somente às pessoas a partir de 18 anos e, após a aplicação de cada uma das
+                    doses da vacina deve-se evitar a doação de sangue por 7 dias.
+                </p>
+            </div>
+        </div>
+
+
+        <div id="terceiro">
+            <img src="img/13.jpg" id="rua">
+            <div id="juntos">
+                <h3 class="distancia">Butanvac</h3>
+                <p class="classep">
+                    O Brasil acaba de entrar para o hall de países que contam com uma vacina feita totalmente “em casa”
+                    para
+                    o combate à pandemia do novo coronavírus. A Butanvac, nome do novo imunizante produzido pelo
+                    Instituto
+                    Butantan, foi anunciada em coletiva na manhã desta sexta-feira (26) por Dimas Covas, diretor da
+                    entidade.
+                    <br>
+                    O imunizante 100% brasileiro vai utilizar a mesma tecnologia que já é aplicada na vacina da gripe. O
+                    Instituto Butantan, que ficará responsável por sua fabricação, domina completamente essa plataforma:
+                    é o
+                    maior produtor do imunizante contra a gripe na América Latina e entrega 80 milhões de doses
+                    anualmente.
+
+                    <br>
+                    Antes de ser autorizada para uso, uma candidata a vacina passa por três fases de testes clínicos em
+                    humanos. A primeira etapa avalia a segurança da fórmula e possíveis reações adversas, bem como se
+                    ela é
+                    capaz de estimular a produção de anticorpos. A segunda fase permite determinar a dosagem necessária
+                    e,
+                    novamente, a capacidade de levar o organismo a produzir anticorpos, mas em um grupo maior. Na última
+                    etapa, com milhares de participantes, são avaliadas a segurança e a eficácia da vacina.
+
+
+                </p>
+            </div>
+        </div>
+
+        <div id="prevencao">
+            <div id="dentroprevencao">
+                <h2>Eficácia das vacinas:</h2>
+                <!--Aqui utilizamos JQuery UI-->
+                <div class="TabControl">
+                    <div id="header">
+                        <ul class="abas">
+                            <li>
+                                <div class="aba" class="primeiraaba">
+                                    <span>CoronaVac</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="aba" id="segundaaba">
+                                    <span>Oxford-Astrazeneca</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="aba" class="terceiraaba">
+                                    <span>Butanvac</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="content">
+                        <div class="conteudo">
+                            <ul>
+                                <li>
+                                    <p>Fabricante/desenvolvedor: Sinovac</p>
+                                </li>
+                                <li>
+                                    <p>A eficácia geral da vacina ficou em 50,38%</p>
+                                </li>
+                                <li>
+                                    <p>Método de administração: Injeção intramuscular</p>
+                                </li>
+                                <li>
+                                    <p>Aplicação de 2 doses</p>
+                                </li>
+                                <li>
+                                    <p>A vantagem da CoronaVac é a logística de armazenamento e distribuição, a temperatura de conservação exigida é entre 2 e 8°C.</p>
+                                </li>
+                                <li>
+                                    <p>As reações mais comuns são: dor no local da aplicação de dor de cabeça.</p>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="conteudo">
+                            <ul>
+                                <li>
+                                    <p>Fabricante/desenvolvedor: AstraZeneca, Universidade de Oxford</p>
+                                </li>
+                                <li>
+                                    <p>A eficácia geral da vacina ficou em 79%</p>
+                                </li>
+                                <li>
+                                    <p>Método de administração: Injeção intramuscular</p>
+                                </li>
+                                <li>
+                                    <p>Aplicação de 2 doses</p>
+                                </li>
+                                <li>
+                                    <p>A melhor vantagem é o fato de ser uma vacina que, de fato, o governo brasileiro já fez negociação com número de doses</p>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="conteudo">
+                            <li>
+                                <p>A vacina Butanvac vai utilizar a mesma tecnologia da vacina contra a gripe</p>
+                            </li>
+                            <li>
+                                <p>A ideia é que a vacina seja capaz de proteger a população contra a P.1</p>
+                            </li>
+                            <li>
+                                <p>capacidade de produção de 100 milhões de doses por ano.</p>
+                            </li>
+                            <li>
+                                <p>A aprovação da vacina dependerão do sucesso dos testes realizados em voluntários e da aprovação da Agência Nacional de Vigilância Sanitária (Anvisa).</p>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+                <img src="img/11.jpg" id="torneira" class=".torneira">
+                <img src="img/10.jpg" style="display: none;" class="substitui">
+            </div>
+        </div>
+
+        <img src="img/6.png" class="distanciamento">
+
+        <br>
+    </main>
+
+    <div class="main main2 has-scroll-reveal animation fadeInUp">
+
+        <h2 class="distancia">Tratamento e medicamentos:</h2>
+
+        <p class="classep">
+        <p>Atualmente, o tratamento para casos leves de covid-19 recomendado é muito parecido com o feito em outras
+            infecções respiratórias causadas por vírus, como a gripe.
+        </p>
+        <p>O médico pode prescrever remédios para alívio dos
+            sintomas, como analgésicos para as dores e antitérmicos para controlar a febre. É importante notarmos que
+            esses medicamentos atuam nos sintomas, e não na causa da doença!
+        </p>
+
+        <p>
+            Além disso, é importante repouso e mais ingestão de líquidos para evitar desidratação. O médico pode
+            solicitar exames de sangue ou de imagem, como o raio-x, para avaliar a condição clínica do paciente.
+        </p>
+        </p>
+
+        <br>
+        <h4 class="distancia"> Antibiotico não funciona</h4>
+        <p class="classep"> Os antibióticos não funcionam contra os vírus; eles só funcionam em infecções bacterianas.
+            COVID-19 é
+            causado por um vírus, portanto, os antibióticos não funcionam. Os antibióticos não devem ser usados ​​como
+            meio de prevenção ou tratamento da COVID-19.
+
+        </p>
+    </div>
+
+    <div class="videos">
+        <div class="video1">
+            <h2>Como lavar as mãos corretamente</h2>
+            <iframe width="660" height="315" src="https://www.youtube.com/embed/rsQlyIwetsE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="video2">
+            <h2>Cuidados adicionais contra o Coronavírus</h2>
+            <iframe width="660" height="315" src="https://www.youtube.com/embed/n0Y2zS-sz1E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-1">
+            <img src="./img/brasao.png">
+            <strong>Governo do Estado de São Paulo</strong><br>
+            Todos os direitos reservados.
+            <div id="data-hora"></div>
+        </div>
+        <div class="footer-2">
+            <p style="text-align: center;">Nos acompanhem em nossas redes sociais:</p>
+            <div>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram-square"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+            <br>
+            <strong>Ouvidoria:</strong>
+            <p>Canal de comunicação entre o cidadão e a administração pública com a finalidade de receber manifestações como sugestões, reclamações e denúncias. </p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
